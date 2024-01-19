@@ -1,0 +1,28 @@
+PIR is partial infrared detect ir emitted by warm objects . THIS IS HCSR501
+
+Sensing element is a pyroelectric sensing element
+When motion detected gives a high signal
+
+Duration can be adjusted by potentiometer  . Clockwise turning increases delay
+Sensitivity also 2-7 m can be adjusted by potentiometer . Clockwise decreases the range
+
+BISS001 is the control chip and converts analog signal to digital.\
+
+Lens in front of the sensor is a fresnel lens and extends it's field of view
+
+
+The sensing element has 2 parts . if the object crosses the first part at one instant of time  then it will cross the next one after a few moments
+If BISS001 detects large difference between two values at one instant of time , then output is high
+
+You don't even need arduino , if detection then high flows from output
+
+
+------------------------------------------------------------------
+
+Can connect 5V relay with our 5V PIR . Can check relay is activated using led glow . 
+This sensor is best for animal detection
+
+
+-------------------------------------------------------------------
+
+The high output from a pir can operate a transistor . 
